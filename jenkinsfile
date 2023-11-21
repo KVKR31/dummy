@@ -12,7 +12,7 @@ pipeline {
     }
     stage( "checkout from SCM" ) {
       steps {
-      git branch: 'main' , credentialsId: 'github' , url: '' 
+      git branch: 'main' , credentialsId: 'github' , url: https://github.com/KVKR31/dummy/blob/main/jenkinsfile '' 
       }
     }
     stage( "Build Application" ) {
